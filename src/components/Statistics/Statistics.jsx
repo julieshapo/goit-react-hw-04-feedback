@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { Text, Wrap } from './Statistics.styled';
+import { Section, Text, Wrap } from './Statistics.styled';
 
 export const Statistics = ({ options, statistic, total, positiveFeedback }) => {
   return (
@@ -11,8 +11,10 @@ export const Statistics = ({ options, statistic, total, positiveFeedback }) => {
           </Text>
         );
       })}
-      <Text>total: {total}</Text>
-      <Text>positive feedback: {positiveFeedback()}%</Text>
+      <Section>
+        <Text>total: {total}</Text>
+        <Text>positive feedback: {positiveFeedback()}%</Text>
+      </Section>
     </Wrap>
   );
 };

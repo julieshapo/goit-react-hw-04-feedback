@@ -11,6 +11,10 @@ export const Text = styled.p`
   }
 `;
 
+export const Section = styled.div`
+  margin-top: 20px;
+`;
+
 export const Wrap = styled.div`
   display: flex;
   flex-direction: column;
